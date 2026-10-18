@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --paper: #E3E8EA;
+    --surface: #F6F8F8;
+    --ink: #17232A;
+    --muted: #56656D;
+    --hull: #14424C;
+    --hull-ink: #F6F8F8;
+    --signal: #E3A208;
+    --rust: #A8432B;
+    --line: #C5CDD1;
+    --soft: #EDF1F2;
+  }
+
+  .dark {
+    --paper: #0E191E;
+    --surface: #16242A;
+    --ink: #E2E9EB;
+    --muted: #94A4AB;
+    --hull: #5FA6B4;
+    --hull-ink: #0E191E;
+    --signal: #F0B83A;
+    --rust: #E07B60;
+    --line: #2A3C43;
+    --soft: #1C2D34;
+  }
+
+  body {
+    font-family: 'Barlow', system-ui, -apple-system, sans-serif;
+    background-color: var(--paper);
+    color: var(--ink);
+  }
+
+  h1, h2, h3, h4, .font-condensed {
+    font-family: 'Barlow Condensed', 'Barlow', sans-serif;
+  }
+
+  .font-devanagari {
+    font-family: 'Noto Sans Devanagari', 'Barlow', sans-serif;
+  }
+}
+
+/* Custom scrollbars for maritime equipment tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}

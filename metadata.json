@@ -1,0 +1,6 @@
+{
+  "name": "Ship's Memory - Maritime Handover",
+  "description": "Maritime crew handover intelligence platform for MV Coral Meridian, connecting technical superintendents, outgoing chief engineers, and incoming chief engineers with Gemini AI.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
